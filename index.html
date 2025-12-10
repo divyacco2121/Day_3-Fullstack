@@ -3,15 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student ID Card</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .card {
+            background-color: white;
+            width: 450px;
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid #333;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .photo-container {
+            flex-shrink: 0;
+        }
+
+        .photo {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: #ccc;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #111;
+        }
+
+        .details {
+            font-size: 18px;
+            color: #222;
+            margin: 4px 0;
+            line-height: 1.4;
+        }
+
+    </style>
 </head>
 <body>
-    <p><form>
-        Name: <input></br>
-        Enrolment No.: <input></br>
-        Branch: <input>
-    </form>
-        <img src="Screenshot (167).png" width="300">
-    </p>
+
+    <div class="card">
+        <div class="photo-container">
+            <img src="Screenshot (167).png" alt="Student Photo" class="photo">
+        </div>
+        
+        <div class="info">
+            <h1 class="name">Divyansh S</h1>
+            <p class="details">Enrollment: BTCS24O1044</p>
+            <p class="details">Branch: Computer Science</p>
+            <p class="details">Semester: 4th</p>
+        </div>
+    </div>
+
 </body>
 </html>
